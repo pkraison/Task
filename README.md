@@ -47,7 +47,7 @@ Dataset and weight link:
 
 2. VGG16 model link: wget "https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_th_dim_ordering_th_kernels.h5"
 
-3.
+3.Weights: https://drive.google.com/file/d/1R_ANA4-c_HpC3criLmRrWIz6IYawM-zo/view?usp=sharing
 
 
 Dataset:
