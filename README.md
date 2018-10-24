@@ -7,7 +7,9 @@ Through this task I tried to design a convolutional neural network based pipelin
 2. Tensorflow
 3. keras
 4. OpenCV
-clone this repo : git clone https://github.com/pkraison/Task.git
+
+clone this repo : git clone https://github.com/pkraison/Task.git 
+
 extract and go to Task folder, now download dataset, VGG16 model and weights and put them to Data folder after extraction, be sure that the dataset1 and VGG16 model should be in Data folder. weight should be in Task directory:
 
 Task/$ ls
@@ -25,17 +27,25 @@ Task/$ python predict.py  --save_weights_path=weights/ex1.model  --epoch_number=
 
 for training:
 I already trained with sample dataset and saved weights to weights directory:
+
 Task/$ python  train.py  --save_weights_path=weights/ex1  --train_images="data/dataset1/images_prepped_train/"  --train_annotations="data/dataset1/annotations_prepped_train/"  --n_classes=2
 
+weights are saved in weights directory
 
-#weights are saved in weights directory
-###SegNet Description
-#The architecture consists of a sequence of non-linear processing layers (encoders) and a corresponding set of decoders followed by a pixelwise classifier. Typically, each encoder consists of one or more convolutional layers with batch normalisation and a ReLU non-linearity, followed by non-overlapping maxpooling and sub-sampling. The sparse encoding due to the pooling process is upsampled in the decoder using the maxpooling indices in the encoding sequence. This has the important advantages of retaining high frequency details in the segmented images and also reducing the total number of trainable parameters in the decoders.(Ref.-http://mi.eng.cam.ac.uk/projects/segnet/)
+SegNet Description
 
-#1. Uses a novel technique to upsample encoder output which involves storing the max-pooling indices used in pooling layer. This gives reasonably good performance and is space efficient
-#2. VGG16 with only forward connections and non trainable layers is used as encoder. This leads to very less parameters.
+The architecture consists of a sequence of non-linear processing layers (encoders) and a corresponding set of decoders followed by a pixelwise classifier. Typically, each encoder consists of one or more convolutional layers with batch normalisation and a ReLU non-linearity, followed by non-overlapping maxpooling and sub-sampling. The sparse encoding due to the pooling process is upsampled in the decoder using the maxpooling indices in the encoding sequence. This has the important advantages of retaining high frequency details in the segmented images and also reducing the total number of trainable parameters in the decoders.(Ref.-http://mi.eng.cam.ac.uk/projects/segnet/)
+
+1. Uses a novel technique to upsample encoder output which involves storing the max-pooling indices used in pooling layer. This gives reasonably good performance and is space efficient
+
+2. VGG16 with only forward connections and non trainable layers is used as encoder. This leads to very less parameters.
 
 Dataset and weight link:
+1. Dataset link : https://drive.google.com/file/d/0B0d9ZiqAgFkiOHR1NTJhWVJMNEU/view?usp=sharing
+
+2. VGG16 model link: wget "https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_th_dim_ordering_th_kernels.h5"
+
+3.
 
 
 Dataset:
