@@ -49,8 +49,10 @@ Dataset and weight link:
 
 
 Dataset:
-#dir:
+
+dir:
 Data/dataset1
+
 Images Folder - For all the training images
 1. Annotations Folder - For the corresponding ground truth segmentation images
 2. The filenames of the annotation images should be same as the filenames of the RGB images.
