@@ -13,10 +13,12 @@ clone this repo : git clone https://github.com/pkraison/Task.git
 extract and go to Task folder, now download dataset, VGG16 model and weights and put them to Data folder after extraction, be sure that the dataset1 and VGG16 model should be in Data folder. weight should be in Task directory:
 
 Task/$ ls
-Data   weights  VGGSegnet.py  LoadBatches.py  train.py  predict.py
+
+Data    weights   VGGSegnet.py   LoadBatches.py   train.py   predict.py
 
 Task/Data$ ls
-dataset1  vgg16_weights_th_dim_ordering_th_kernels.h5  myTest  predictions
+
+dataset1   vgg16_weights_th_dim_ordering_th_kernels.h5   myTest   predictions
 
 
 for running this project we need to go to Directory Task and:
